@@ -1,0 +1,148 @@
+body {   
+    margin: auto; 
+    background-color: #b6b4b4; 
+}
+
+/* Menu */
+.menu {         
+    background-color: #8f8f8f; 
+    padding: 10px;
+    display: flex; 
+    justify-content: center; 
+    gap: 50px; 
+    flex-wrap: wrap; 
+}
+
+/* Botões */
+.botao {                 
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(5px);
+    box-shadow: 0px 3px 0px #1a466d, 0px 4px 6px rgba(5, 83, 138, 0.2);
+    justify-content: center;
+    font-size: larger;
+    display: flex; 
+    padding: 10px 20px; 
+    color: rgb(203, 197, 197);
+    background-color: black;
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+.botao:hover {
+    background-color: #0f4682; 
+}
+
+/* Título Central */
+section h1 {      
+    text-align: center;
+    padding: 100px 20px; 
+    margin: 0;
+    font-size: 30px; 
+    color: black; 
+    font-weight: bold; 
+}
+
+h1 span {
+    color: #3097f2;
+}
+
+/* Parágrafo acima do rodapé */
+section p.paragrafo {     
+    font-size: 100%;
+    text-align: justify; 
+    border: 2px solid #8f8f8f; 
+    margin: 0; 
+    margin-top: 50px;
+    padding: 10px; 
+    background-color: #8f8f8f;
+    color: rgb(203, 197, 197);
+}
+
+/* Lista de Especificações de Serviço */
+.lista {        
+    font-size: 20px; 
+    list-style-type: none;
+    padding-top: 50px; 
+    margin: auto;
+    width: 100%; 
+    max-width: 500px;
+    text-align: center;
+}
+
+.lista li {
+    background-color: #8f8f8f;
+    color: rgb(203, 197, 197);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px #1a466d, 0px 4px 6px rgba(5, 83, 138, 0.2);
+}
+
+.lista li:hover {
+    background-color: #072442;
+}
+
+/* Rodapé */
+footer {        
+    background-color: #8f8f8f; 
+    padding: 20px; 
+    margin-top: 50px; 
+    text-align: center; 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 16px; 
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none; 
+    margin: 0 10px; 
+    display: inline-flex; 
+    align-items: center; 
+}
+
+footer a:hover {
+    background-color: #0f4682; 
+}
+
+/*Para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu {
+        gap: 20px; 
+        flex-direction: column; 
+    }
+
+    section h1 {
+        padding: 50px 20px; 
+        font-size: 25px; 
+    }
+
+    .lista {
+        font-size: 16px; 
+        padding-top: 30px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .botao {
+        padding: 8px 15px; 
+    }
+
+    section h1 {
+        padding: 30px 10px; 
+        font-size: 20px; 
+    }
+
+    .lista {
+        font-size: 14px; 
+        padding-top: 20px; 
+    }
+}
+
